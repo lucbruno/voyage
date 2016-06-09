@@ -1,47 +1,189 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-    <head>
-        <meta charset="UTF-8" />
+<html lang="en">
+<head>
+  <meta charset="utf-8">
 
         <title>Blueprint: Slide and Push Menus</title>
 
         <link rel="stylesheet" type="text/css" href="Style/default.css" />
         <link rel="stylesheet" type="text/css" href="Style/Menu.css" />
-        
-
+<!-- 
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css"> -->
     </head>
-    <body class="cbp-spmenu-push">
-        <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
-            <ul>
-                <li> <h3>Menu</h3> </li>
-                <li> <a href="#">Trip Asie</a> </li>
-                    <ul>
-                        <li> <a href="#">Pays</a></li>
-                        <li> <a href="#">Villes</a></li>
-                        <li> <a href="#">Jours</a></li>
-                    </ul>
-                <li><a href="#">Calendrier</a></li>
-            </ul>
+    <body >
+<nav>
+        <ul class="list-unstyled main-menu" >
+            <li class="text-right"><a href="#" id="nav-close">X</a></li>
+            <li> <h3>Menu</h3> </li>
+            <li> <a href="#" class="menu-item menu-item-1">Mes Voyages<span class="icon"></span></a>
+                <ul class="list-unstyled">                   
+                    <li class="sub-nav"><a href="#" class="menu-item menu-item-2">Trip Asie<span class="icon"></span></a>
+                        <ul class="list-unstyled">
+                            <li class="sub-nav"> <h4>Pays</h4></li>
+                            <li class="sub-nav"><a href="#" class="menu-item menu-item-3">Hong Kong<span class="icon"></span></a>
+                                <ul class="list-unstyled">
+                                    <li class="sub-nav"> <h4>Villes</h4></li>
+                                    <li class="sub-nav"> <a href="#" class="menu-item menu-item-4">Hong Kong<span class="icon"></span></a></li>
+                                    <li class="sub-nav"> <a href="#" class="menu-item menu-item-4">Macao<span class="icon"></span></a></li>
+                                </ul>
+                            </li>
+
+
+                            <li><a href="#" class="menu-item menu-item-3">Chine</a>
+                                <ul class="list-unstyled">
+                                    <li> <h4>Villes</h4></li>
+                                    <li> <a href="#" class="menu-item menu-item-4">Guilin</a></li>
+                                    <li> <a href="#" class="menu-item menu-item-4">Wuhan</a></li>
+                                    <li> <a href="#" class="menu-item menu-item-4">Xi'an</a></li>
+                                    <li> <a href="#" class="menu-item menu-item-4">Beijing</a></li>
+                                    <li> <a href="#" class="menu-item menu-item-4">Shanghai</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="menu-item menu-item-3">Japon</a>
+                                <ul>
+                                    <li> <h4>Villes</h4></li>
+                                    <li> <a href="#" class="menu-item menu-item-4">Tokyo</a></li>
+                                    <li> <a href="#" class="menu-item menu-item-4">Osaka</a></li>
+                                    <li> <a href="#" class="menu-item menu-item-4">Hiroshima</a></li>
+                                </ul>
+                            </li>
+
+                             <li><a href="#" class="menu-item menu-item-3">Taiwan</a>
+                                <ul>
+                                    <li> <h4>Villes</h4></li>
+                                    <li> <a href="#" class="menu-item menu-item-4">Taipei</a></li>
+                                    <li> <a href="#" class="menu-item menu-item-4">Kenting</a></li>
+                                    <li> <a href="#" class="menu-item menu-item-4">Kaoshiung</a></li>
+                                    <li> <a href="#" class="menu-item menu-item-4">Tainan</a></li>
+                                    <li> <a href="#" class="menu-item menu-item-4">Sun Moon Lake</a></li>
+                                    <li> <a href="#" class="menu-item menu-item-4">Hualien</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="menu-item menu-item-3">Thailand</a>
+                                <ul>
+                                    <li> <h4>Villes</h4></li>
+                                    <li> <a href="#" class="menu-item menu-item-4">Bangkok</a></li>
+                                    <li> <a href="#" class="menu-item menu-item-4">Koh Samui/Koh Phangan</a></li>
+                                    <li> <a href="#" class="menu-item menu-item-4">Koh Lanta</a></li>
+                                    <li> <a href="#" class="menu-item menu-item-4">Kanchanaburi</a></li>
+                                    <li> <a href="#" class="menu-item menu-item-4">Lopburi</a></li>
+                                    <li> <a href="#" class="menu-item menu-item-4">Chiang Mai</a></li>
+                                    <li> <a href="#" class="menu-item menu-item-4">Pai</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="menu-item menu-item-3">Laos</a>
+                                <ul>
+                                    <li> <h4>Villes</h4></li>
+                                    <li> <a href="#" class="menu-item menu-item-4">Luang Prabang</a></li>
+                                    <li> <a href="#" class="menu-item menu-item-4">Phonsavanh</a></li>
+                                    <li> <a href="#" class="menu-item menu-item-4">Vang vieng</a></li>
+                                    <li> <a href="#" class="menu-item menu-item-4">Vientiane</a></li>
+                                    <li> <a href="#" class="menu-item menu-item-4">4000 iles</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="menu-item menu-item-3">Cambodge</a>
+                                <ul>
+                                    <li> <h4>Villes</h4></li>
+                                    <li> <a href="#" class="menu-item menu-item-4">Kratie</a></li>
+                                    <li> <a href="#" class="menu-item menu-item-4">Siem Reap</a></li>
+                                    <li> <a href="#" class="menu-item menu-item-4">Battambang</a></li>
+                                    <li> <a href="#" class="menu-item menu-item-4">Kampot</a></li>
+                                    <li> <a href="#" class="menu-item menu-item-4">Phnom Penh</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="menu-item menu-item-3">Vietnam</a>
+                                <ul>
+                                    <li> <h4>Villes</h4></li>
+                                    <li> <a href="#" class="menu-item menu-item-4">Ho Chi Minh city</a></li>
+                                    <li> <a href="#" class="menu-item menu-item-4">Can Tho</a></li>
+                                    <li> <a href="#" class="menu-item menu-item-4">Dalat</a></li>
+                                    <li> <a href="#" class="menu-item menu-item-4">Trip Moto</a></li>
+                                    <li> <a href="#" class="menu-item menu-item-4">Hoi an</a></li>
+                                    <li> <a href="#" class="menu-item menu-item-4">Hue</a></li>
+                                    <li> <a href="#" class="menu-item menu-item-4">Nha Trang</a></li>
+                                    <li> <a href="#" class="menu-item menu-item-4">Nin Binh</a></li>
+                                    <li> <a href="#" class="menu-item menu-item-4">Baie d'Along</a></li>
+                                    <li> <a href="#" class="menu-item menu-item-4">Hanoi</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="menu-item menu-item-3">Singapore</a>
+                                <ul>
+                                    <li> <h4>Villes</h4></li>
+                                    <li> <a href="#" class="menu-item menu-item-4">HSingapore</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li> <a href="#" class="menu-item menu-item-2">Trip Tahiti</a>
+                        <ul>
+                            <li> <a href="#">Pays</a>
+                                <ul>
+                                    <li> <a href="#">Villes</a>
+                                        <ul>
+                                            <li> <a href="#">Jours</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#" class="menu-item menu-item-1">Calendrier</a></li>
+        </ul>
         </nav>
-        
-        <div class="container">
-            <header class="clearfix">
+        <div class="navbar navbar-inverse navbar-fixed-top">      
           
-            </header>
-            <div class="main">
-               
-                <section class="buttonset">
-                 
-                    <!-- Class "cbp-spmenu-open" gets applied to menu and "cbp-spmenu-push-toleft" or "cbp-spmenu-push-toright" to the body -->
-                    <button id="showLeftPush">Show/Hide Left Push Menu</button>
-                 
-                </section>
-            </div>
+      <!--   <div class="buttonset navbar-header pull-right">
+          <a id="nav-expander" class="nav-expander fixed">
+            &#9776;<i class="fa fa-bars fa-lg white"></i>
+          </a>
+        </div> -->
+        <div class="navbar-header pull-right">
+          <a id="nav-expander" class="nav-expander fixed">
+            &#9776;<i class="fa fa-bars fa-lg white"></i>
+          </a>
         </div>
 
 
         <!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
-        <script src="Style/classie.js"></script>
+        <!-- <script src="Style/classie.js"></script> -->
         <script src="Style/Menu.js"></script>
+
+            <script>
+    $(document).ready(function(){                                               
+       
+       //Navigation Menu Slider
+        $('#nav-expander').on('click',function(e){
+            e.preventDefault();
+            $('body').toggleClass('nav-expanded');
+        });
+        $('#nav-close').on('click',function(e){
+            e.preventDefault();
+            $('body').removeClass('nav-expanded');
+        });
+        
+        
+        // Initialize navgoco with default options
+        $(".main-menu").navgoco({
+            caret: '<span class="caret"></span>',
+            accordion: false,
+            openClass: 'open',
+            save: true,
+            cookie: {
+                name: 'navgoco',
+                expires: false,
+                path: '/'
+            },
+            slide: {
+                duration: 300,
+                easing: 'swing'
+            }
+        });
+  
+            
+      });
+      </script>
     </body>
 </html>
