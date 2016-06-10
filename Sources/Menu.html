@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css"> -->
     </head>
     <body >
-<nav>
+<nav class="sideNav">
         <ul class="list-unstyled main-menu" >
             <li class="text-right"><a href="#" id="nav-close">X</a></li>
             <li> <h3>Menu</h3> </li>
@@ -132,8 +132,8 @@
             </li>
             <li><a href="#" class="menu-item menu-item-1">Calendrier</a></li>
         </ul>
-        </nav>
-        <div class="navbar navbar-inverse navbar-fixed-top">      
+    </nav>
+       <!--  <div class="navbar navbar-inverse navbar-fixed-top">      --> 
           
       <!--   <div class="buttonset navbar-header pull-right">
           <a id="nav-expander" class="nav-expander fixed">
@@ -142,7 +142,7 @@
         </div> -->
         <div class="navbar-header pull-right">
           <a id="nav-expander" class="nav-expander fixed">
-            &#9776;<i class="fa fa-bars fa-lg white"></i>
+            &#9776;<i class="fa fa-bars fa-lg"></i>
           </a>
         </div>
 
@@ -150,40 +150,7 @@
         <!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
         <!-- <script src="Style/classie.js"></script> -->
         <script src="Style/Menu.js"></script>
+        <script src="Style/sidenav.js"></script>
 
-            <script>
-    $(document).ready(function(){                                               
-       
-       //Navigation Menu Slider
-        $('#nav-expander').on('click',function(e){
-            e.preventDefault();
-            $('body').toggleClass('nav-expanded');
-        });
-        $('#nav-close').on('click',function(e){
-            e.preventDefault();
-            $('body').removeClass('nav-expanded');
-        });
-        
-        
-        // Initialize navgoco with default options
-        $(".main-menu").navgoco({
-            caret: '<span class="caret"></span>',
-            accordion: false,
-            openClass: 'open',
-            save: true,
-            cookie: {
-                name: 'navgoco',
-                expires: false,
-                path: '/'
-            },
-            slide: {
-                duration: 300,
-                easing: 'swing'
-            }
-        });
-  
-            
-      });
-      </script>
     </body>
 </html>

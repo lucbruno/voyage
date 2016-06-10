@@ -12,7 +12,6 @@ header
     justify-content:center;
     /* direction des éléments : cad si je rajoute un élément il se met en dessous des autres*/
     flex-direction: column;
-
 }
 
 

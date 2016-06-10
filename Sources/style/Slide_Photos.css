@@ -15,9 +15,6 @@
     background-color: black;
 }
 
-.body{
-    display: flex;
-}
 
 .Buttons{
     cursor:not-allowed;opacity:0.5;
